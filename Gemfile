@@ -1,0 +1,6 @@
+gem 'sinatra'
+gem 'puma'
+gem 'bcrypt'
+gem 'pg'
+gem 'sinatra-activerecord'
+gem 'pony'
