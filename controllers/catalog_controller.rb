@@ -1,11 +1,3 @@
-=begin
-/catalog                        # Main book catalog search
-/catalog/search                 # Search results
-/catalog/book/:id               # Individual book details
-/catalog/author/:id             # Books by author
-/catalog/genre/:genre           # Books by genre
-=end
-
 
 class CatalogController < ApplicationController
    get '/' do
@@ -15,7 +7,13 @@ class CatalogController < ApplicationController
    get '/:search' do
    end
 
+   get '/book/:id' do
+   end
 
+   get '/author/:id' do
+   end
 
+   get '/genre/:genre' do
+   end
 
 end
