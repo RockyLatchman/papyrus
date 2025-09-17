@@ -1,0 +1,12 @@
+<div class="search-results">
+ <h2>Search results</h2>
+   <% if @authors_books.empty? %>
+     <p>No results</p>
+   <% else %>
+     <% @authors_books.each do | author | %>
+       <%= author['title'] %><br>
+       <a href="/catalog/book/<%= author['book_id'] %>">view book</a><br><br>
+     <% end %>
+   <% end %>
+   <a href="/catalog">Return to catalog</a>
+</div>

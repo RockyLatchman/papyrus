@@ -1,5 +1,4 @@
 
-
 class Book < ActiveRecord::Base
   def retrieve_all
     @books = Book.all
@@ -9,8 +8,9 @@ class Book < ActiveRecord::Base
     @book = Book.find(id)
   end
 
-  def find_by_author(name)
-    @author = Book.find_by(author: name)
+  def search_catalog(criteria, name)
+    @author = Book.where("#{criteria}": name)
   end
+
 
 end

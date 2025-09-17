@@ -1,11 +1,19 @@
 <div id="search">
-  <input type="text" name="catalog_search" placeholder="Search" required>
-  <button>Search</button>
+  <form method="POST">
+    <select name="filter">
+      <option value="author">author</option>
+      <option value="title">title</option>
+      <option value="publisher">publisher</option>
+      <option value="genre">genre</option>
+    </select>
+    <input type="text" name="catalog_search" placeholder="Search" required>
+    <button hx-post="/catalog/search/" hx-target=".catalog" hx-swap="innerHTML">Search</button>
+  </form>
 </div>
-<h1>Catalog</h1>
 <div class="catalog">
-<% @catalog.each do | catalog | %>
-  <%= catalog['title'] %><br>
-  <a href="/catalog/book/<%= catalog['book_id'] %>">view book</a><br>
-<% end %>
+ <h2>Catalog</h2>
+ <% @catalog.each do | catalog | %>
+   <%= catalog['title'] %><br>
+   <a href="#" hx-target=".catalog" hx-swap="innerHTML" hx-get="/catalog/book/<%= catalog['book_id'] %>">view book</a><br>
+ <% end %>
 </div>
