@@ -1,0 +1,5 @@
+<h1>Catalog</h1>
+<% @catalog.each do | catalog | %>
+  <%= catalog['title'] %><br>
+  <a href="/catalog/book/<%= catalog['book_id'] %>">view book</a><br>
+<% end %>
