@@ -17,6 +17,8 @@ class CatalogController < ApplicationController
    end
 
    get '/author/:name' do
+     book = Book.new
+     @author = book.find_by_author(params[:name])
    end
 
    get '/genre/:genre' do
