@@ -1,5 +1,11 @@
+<div id="search">
+  <input type="text" name="catalog_search" placeholder="Search" required>
+  <button>Search</button>
+</div>
 <h1>Catalog</h1>
+<div class="catalog">
 <% @catalog.each do | catalog | %>
   <%= catalog['title'] %><br>
   <a href="/catalog/book/<%= catalog['book_id'] %>">view book</a><br>
 <% end %>
+</div>

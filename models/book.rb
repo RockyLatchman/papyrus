@@ -9,4 +9,5 @@ class Book < ActiveRecord::Base
     @book = Book.find(id)
   end
 
+
 end
