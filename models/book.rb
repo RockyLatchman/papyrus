@@ -9,5 +9,8 @@ class Book < ActiveRecord::Base
     @book = Book.find(id)
   end
 
+  def find_by_author(name)
+    @author = Book.find_by(author: name)
+  end
 
 end
