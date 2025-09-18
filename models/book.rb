@@ -15,10 +15,6 @@ class Book < ActiveRecord::Base
     @author = Book.where("#{criteria}": name)
   end
 
-
-
-
-
   def self.number_of_copies(book_id)
     book_count = 0
     book_details = Book.includes(:copies).where(copies: { book_id: book_id})
