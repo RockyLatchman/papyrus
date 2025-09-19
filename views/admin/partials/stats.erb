@@ -22,6 +22,15 @@
      <p>0</p>
    </div>
    <% end %>
-
+   <% if request.path_info == '/desk' %>
+     <div class="dashboard-stat">
+       <p>STAFF</p>
+       <p>0</p>
+     </div>
+     <div class="dashboard-stat">
+      <p>SIGNED IN</p>
+      <p>0</p>
+    </div>
+   <% end %>
  </div>
 </div>
