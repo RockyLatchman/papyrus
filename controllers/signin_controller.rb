@@ -6,4 +6,8 @@ class SigninController < ApplicationController
   get '/otp' do
     erb :'authentication/otp'
   end
+
+  get '/forgot-password' do
+    erb :'authentication/forgot_password'
+  end
 end
