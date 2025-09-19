@@ -10,4 +10,8 @@ class SigninController < ApplicationController
   get '/forgot-password' do
     erb :'authentication/forgot_password'
   end
+
+  get '/reset-password' do
+    erb :'authentication/reset_password'
+  end
 end
