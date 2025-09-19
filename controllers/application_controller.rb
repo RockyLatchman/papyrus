@@ -5,7 +5,6 @@ require 'sinatra/activerecord'
 class ApplicationController < Sinatra::Base
 
   configure do
-
     set :views, File.expand_path('../../views', __FILE__)
     set :database, 'config/database.yml'
   end
