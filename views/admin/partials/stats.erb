@@ -1,6 +1,7 @@
 <div class="dashboard-stats">
   <div class="dashboard-flex">
    <div class="dashboard-stat">
+   <% if request.path_info == '/dashboard' %>
      <p>PATRONS</p>
      <p>0</p>
    </div>
@@ -20,5 +21,7 @@
      <p>RETURNED</p>
      <p>0</p>
    </div>
+   <% end %>
+
  </div>
 </div>
