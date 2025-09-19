@@ -1,5 +1,16 @@
 <div class="desk-container">
  <%= erb :'admin/partials/menu' %>
  <h2>DESK</h2>
- <%= erb :'admin/partials/stats' %>
+ <section><%= erb :'admin/partials/stats' %><section>
+ <div class="admin-staff-card">
+   <header>
+     <h2>Staff management</h2>
+     <input type="text" name="search" placeholder="SEARCH">
+     <a href="">&plus; ADD STAFF MEMBER</a>
+   </header>
+   <div class="staff-members">
+    <p>You have not added any staff members</p>
+   </div>
+ </div>
+ </section>
 </div>
