@@ -18,7 +18,7 @@ class AdminController < ApplicationController
   end
 
   get '/desk/delete/' do
-     erb :'admin/partials/staff/delete', layout: false
+    erb :'admin/partials/staff/delete', layout: false
   end
 
   get '/staff/new' do
