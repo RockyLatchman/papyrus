@@ -9,6 +9,26 @@ class AdminController < ApplicationController
     erb :'admin/catalog'
   end
 
+  get '/catalog/new/' do
+    erb :'admin/partials/catalog/new', layout: false
+  end
+
+  get '/catalog/edit/' do
+    erb :'admin/partials/catalog/edit', layout: false
+  end
+
+  get '/catalog/view/' do
+    erb :'admin/partials/catalog/view', layout: false
+  end
+
+  get '/catalog/delete/' do
+    erb :'admin/partials/catalog/delete', layout: false
+  end
+
+  get '/patrons' do
+    erb :'admin/patrons'
+  end
+
   get '/desk' do
     erb :'admin/desk'
   end

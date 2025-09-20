@@ -1,4 +1,5 @@
 <div class="catalog-container">
+<%= erb :'admin/partials/menu' %>
   <h2>CATALOG</h2>
   <div class="catalog-card">
     <header>
@@ -27,7 +28,42 @@
         <li>ASSISTED BY</li>
       </ul>
     </header>
-    <p>ACQUISTION DATE</p>
+    <p>NO TITLES ADDED</p>
+    <div class="">
+     <ul>
+       <li>
+        <div
+           hx-trigger="click"
+           hx-get="/admin/catalog/view/?user=1"
+           hx-target="#overlay"
+           hx-swap="beforeend"
+           class="modal-button">
+           VIEW
+         </div>
+       </li>
+       <li>
+         <div
+           hx-trigger="click"
+           hx-get="/admin/catalog/edit/?user=1"
+           hx-target="#overlay"
+           hx-swap="beforeend"
+           class="modal-button">
+           EDIT
+        </div>
+       </li>
+       <li>
+         <div
+           hx-trigger="click"
+           hx-get="/admin/catalog/delete/?user=1"
+           hx-target="#overlay"
+           hx-swap="beforeend"
+           class="modal-button">
+           DELETE
+         </div>
+       </li>
+     </ul>
+    </div
   </div>
  </div>
 </div>
+<div id="overlay"></div>

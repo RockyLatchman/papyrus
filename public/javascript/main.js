@@ -21,7 +21,7 @@ const modal = `
       margin: 10% auto 0 auto;
   }
 
-  #confirm-modal {
+  .confirm-modal {
      width: 25%;
      height: 150px;
      padding: 20px;
@@ -29,7 +29,6 @@ const modal = `
      border-radius: 25px;
      z-index: 9999;
      margin: 10% auto 0 auto;
-
   }
   `;
 modalStyle.textContent = modal;
