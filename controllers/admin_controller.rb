@@ -25,4 +25,8 @@ class AdminController < ApplicationController
     erb :'admin/partials/staff/new', layout: false
   end
 
+  get '/settings' do
+    erb :'admin/settings'
+  end
+
 end
