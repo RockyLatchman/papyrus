@@ -20,6 +20,17 @@ const modal = `
       z-index: 9999;
       margin: 10% auto 0 auto;
   }
+
+  #confirm-modal {
+     width: 25%;
+     height: 150px;
+     padding: 20px;
+     background: #fafafa;
+     border-radius: 25px;
+     z-index: 9999;
+     margin: 10% auto 0 auto;
+
+  }
   `;
 modalStyle.textContent = modal;
 modalButtons.forEach((modalButton) => {
