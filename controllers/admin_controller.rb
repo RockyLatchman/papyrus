@@ -5,6 +5,10 @@ class AdminController < ApplicationController
     erb :'admin/dashboard'
   end
 
+  get '/catalog' do
+    erb :'admin/catalog'
+  end
+
   get '/desk' do
     erb :'admin/desk'
   end
