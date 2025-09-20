@@ -7,7 +7,7 @@
      <h2>Staff management</h2>
      <input type="text" name="search" placeholder="SEARCH">
      <button
-        id="popup"
+        class="modal-button"
         hx-target="#overlay"
         hx-get="/admin/staff/new"
         hx-swap="beforeend">
@@ -16,6 +16,20 @@
    </header>
    <div class="staff-members">
     <p>You have not added any staff members</p>
+    <ul>
+      <li><a href="/admin/desk/view/?user=1" class="modal-button">VIEW</a></li>
+      <li>
+       <div
+         hx-trigger="click"
+         hx-get="/admin/desk/edit/?user=1"
+         hx-target="#overlay"
+         hx-swap="beforeend"
+         class="modal-button">
+         EDIT
+      </div>
+      </li>
+      <li><a href="/admin/desk/delete/?user=1" class="modal-button">DELETE</a></li>
+    </ul>
    </div>
  </div>
  </section>

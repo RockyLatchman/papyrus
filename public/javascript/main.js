@@ -1,6 +1,6 @@
-const popupButton = document.querySelector("#popup");
-const popupStyle = document.createElement("style");
-const popup = `
+const modalButtons = document.querySelectorAll(".modal-button");
+const modalStyle = document.createElement("style");
+const modal = `
   #overlay {
       width: 100%;
       height: 100vh;
@@ -11,7 +11,7 @@ const popup = `
       left: 0;
   }
 
-  .popup {
+  .modal, .edit-modal {
       width: 30%;
       height: 420px;
       padding: 20px;
@@ -21,8 +21,10 @@ const popup = `
       margin: 10% auto 0 auto;
   }
   `;
-popupStyle.textContent = popup;
-popupButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.body.appendChild(popupStyle);
+modalStyle.textContent = modal;
+modalButtons.forEach((modalButton) => {
+  modalButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.body.appendChild(modalStyle);
+  });
 });
