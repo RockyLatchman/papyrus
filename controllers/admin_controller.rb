@@ -10,7 +10,11 @@ class AdminController < ApplicationController
   end
 
   get '/desk/edit/' do
-    erb :'admin/partials/staff/edit'
+    erb :'admin/partials/staff/edit', layout: false
+  end
+
+  get '/desk/view/' do
+    erb :'admin/partials/staff/view', layout: false
   end
 
   get '/staff/new' do

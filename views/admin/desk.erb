@@ -17,18 +17,36 @@
    <div class="staff-members">
     <p>You have not added any staff members</p>
     <ul>
-      <li><a href="/admin/desk/view/?user=1" class="modal-button">VIEW</a></li>
       <li>
        <div
-         hx-trigger="click"
-         hx-get="/admin/desk/edit/?user=1"
-         hx-target="#overlay"
-         hx-swap="beforeend"
-         class="modal-button">
-         EDIT
-      </div>
+          hx-trigger="click"
+          hx-get="/admin/desk/view/?user=1"
+          hx-target="#overlay"
+          hx-swap="beforeend"
+          class="modal-button">
+          VIEW
+        </div>
       </li>
-      <li><a href="/admin/desk/delete/?user=1" class="modal-button">DELETE</a></li>
+      <li>
+        <div
+          hx-trigger="click"
+          hx-get="/admin/desk/edit/?user=1"
+          hx-target="#overlay"
+          hx-swap="beforeend"
+          class="modal-button">
+          EDIT
+       </div>
+      </li>
+      <li>
+        <div
+          hx-trigger="click"
+          hx-get="/admin/desk/delete/?user=1"
+          hx-target="#overlay"
+          hx-swap="beforeend"
+          class="modal-button">
+          DELETE
+        </div>
+      </li>
     </ul>
    </div>
  </div>
