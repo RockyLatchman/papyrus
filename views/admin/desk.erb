@@ -6,7 +6,13 @@
    <header>
      <h2>Staff management</h2>
      <input type="text" name="search" placeholder="SEARCH">
-     <a href="">&plus; ADD STAFF MEMBER</a>
+     <button
+        id="popup"
+        hx-target="#overlay"
+        hx-get="/admin/staff/new"
+        hx-swap="beforeend">
+        &plus; ADD STAFF MEMBER
+    </button>
    </header>
    <div class="staff-members">
     <p>You have not added any staff members</p>
@@ -14,3 +20,4 @@
  </div>
  </section>
 </div>
+<div id="overlay"></div>

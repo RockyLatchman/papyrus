@@ -8,4 +8,9 @@ class AdminController < ApplicationController
   get '/desk' do
     erb :'admin/desk'
   end
+
+  get '/staff/new' do
+    erb :'admin/partials/staff/new', layout: false
+  end
+
 end
