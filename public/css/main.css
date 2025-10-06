@@ -6,3 +6,62 @@
 html {
     box-sizing: border-box;
 }
+
+:root {
+  --backgroundColor: #F4F1EB;
+  --signinButtonColor: #F0ECE7;
+  --formFieldTextColor: #4D4D4D;
+  --formFieldBorderColor: #E4E4E4;
+  --accentColor: #333;
+
+  --dashboardStatsBackground: var(--formFieldBorderColor);
+  --dashboardStatsBorder: #DDDBDB;
+  --dashboardStatsHeader: 300 0.8em "Cousine", sans-serif;
+  --dashboardStatsHeaderColor: #000;
+  --dashboardStatsColor: var(--accentColor);
+  --dashboardStats: 700 1em "Cousine", sans-serif;
+
+  --darkGrayCardColor: var(--accentColor);
+  --darkGrayCardPrimaryColor: var(--backgroundColor);
+  --darkGrayCardSecondaryColor: #EEE9CC;
+  --darkGrayCardBorder: 1px dashed var(--dashboardStatsBorder);
+  --darkGrayCardHeading: 300 1.2em "Cousine", sans-serif;
+  --darkGrayCardFilterColor: var(--darkGrayCardSecondaryColor);
+  --darkGrayCardFilter: 300 0.8em "Cousine", sans-serif;
+  --darkGrayCardListItem: 300 0.9em "Cousine", sans-serif;
+  --darkGrayCardSub: 300 0.7em "Cousine", sans-serif;
+
+  --mainCardColor: #4D4D4D;
+  --mainCardBorder: var(--dashboardStatsBorder);
+  --mainCardPrimaryColor: var(--formFieldBorderColor);
+  --mainCardSecondaryColor: var(--darkGrayCardSecondaryColor);
+  --mainCardHeading: var(--darkGrayCardHeading);
+  --mainCardListItem: var(--darkGrayCardListItem);
+  --mainCardSub: var(--darkGrayCardSub);
+  --mainCardListItemBorder: var(--dashboardStatsBorder);
+
+  --footerCardColor: #000;
+  --footerCardBorder: var(--dashboardStatsBorder);
+  --footerCardPrimaryColor: var(--dashboardStatsBorder);
+  --footerCardSecondaryColor: var(--backgroundColor);
+  --footerCardHeading: var(--mainCardHeading);
+  --footerCardMenu: var(--mainCardListItem);
+  --footerCardHeader: var(--mainCardListItem);
+  --footerCardListItem: var(--mainCardListItem);
+  --footerCardSub: var(--mainCardSub);
+}
+
+
+body {
+  background: var(--backgroundColor);
+}
+
+header{
+  width: 40%;
+  padding: 25px;
+}
+
+h1 {
+  font: 900 2em "Alexandria", sans-serif;
+  color: #000;
+}
