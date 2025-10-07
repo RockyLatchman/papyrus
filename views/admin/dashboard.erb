@@ -2,7 +2,9 @@
  <%= erb :'admin/partials/menu' %>
   <h2>DASHBOARD</h2>
   <%= erb :'admin/partials/stats' %>
-  <%= erb :'admin/partials/popularity' %>
-  <%= erb :'admin/partials/notifications' %>
+  <div class="dashboard-row-items">
+    <%= erb :'admin/partials/popularity' %>
+    <%= erb :'admin/partials/notifications' %>
+  </div>
   <%= erb :'admin/partials/reports' %>
 </div>

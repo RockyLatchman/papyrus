@@ -16,7 +16,7 @@ html {
   --accentColor: #333;
 
   --dashboardStatsBackground: var(--formFieldBorderColor);
-  --dashboardStatsBorder: #DDDBDB;
+  --dashboardStatsBorder: rgba(219,219,219,0.2);
   --dashboardStatsHeader: 300 0.8em "Cousine", sans-serif;
   --dashboardStatsHeaderColor: #000;
   --dashboardStatsColor: var(--accentColor);
@@ -25,8 +25,9 @@ html {
   --darkGrayCardColor: var(--accentColor);
   --darkGrayCardPrimaryColor: var(--backgroundColor);
   --darkGrayCardSecondaryColor: #EEE9CC;
-  --darkGrayCardBorder: 1px dashed var(--dashboardStatsBorder);
-  --darkGrayCardHeading: 300 1.2em "Cousine", sans-serif;
+  --darkGrayCardBorder: 0.1px dashed var(--dashboardStatsBorder);
+  --darkGrayCardLgHeading: 300 1em "Cousine", sans-serif;
+  --darkGrayCardHeading: 300 0.9em "Cousine", sans-serif;
   --darkGrayCardFilterColor: var(--darkGrayCardSecondaryColor);
   --darkGrayCardFilter: 300 0.8em "Cousine", sans-serif;
   --darkGrayCardListItem: 300 0.9em "Cousine", sans-serif;
@@ -63,7 +64,7 @@ header{
 }
 
 h1 {
-  font: 900 1.8em "Alexandria", sans-serif;
+  font: 900 1.4em "Alexandria", sans-serif;
   color: #000;
 }
 
@@ -173,4 +174,174 @@ h1 {
 
 .signin form input[type='submit'] {
   margin-top: 10px;
+}
+
+/* Forgot password  */
+
+
+
+
+
+/* Admin dashboard  */
+
+nav {
+  position: absolute;
+  top: 45px;
+  right: 85px;
+}
+
+nav menu li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 30px;
+  font: var(--dashboardStatsHeader);
+}
+
+nav menu li a {
+  color: var(--darkGrayCardColor);
+  text-decoration: none;
+}
+
+.dashboard {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.dashboard h2 {
+  font: var(--darkGrayCardLgHeading);
+  font-weight: 900;
+  color: var(--accentColor);
+  margin: 15px 0 5px 15px;
+}
+
+.dashboard-stats {
+  width: 100%;
+  height: 55px;
+  background: var(--dashboardStatsBackground);
+  border: var(--dashboardStatsBorder);
+  border-radius: 15px;
+  margin: 20px auto 0 auto;
+}
+
+.dashboard-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 55px;
+}
+
+.dashboard-stats p {
+  font: 300 0.8em "Cousine", sans-serif;
+  text-align: center;
+}
+
+.dashboard-stats p:nth-last-child(odd) {
+  font: 900 1em "Cousine", sans-serif;
+  text-align: center;
+}
+
+.popular-items {
+  background: var(--darkGrayCardColor);
+  border: 1px solid var(--darkGrayCardColor);
+  width: 30%;
+  height: 16em;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.popular-items header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  padding: 45px 15px 15px 15px;
+}
+
+.popular-items header h2 {
+  font: var(--darkGrayCardHeading);
+  color: var( --darkGrayCardSecondaryColor);
+  padding: 0;
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.popular-items select {
+  width: 120px;
+  height: 20px;
+  background: var(--darkGrayCardColor);
+  color: var(--darkGrayCardFilterColor);
+  font: var(--darkGrayCardFilter);
+  border: 1px solid var(--darkGrayCardSecondaryColor);
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 2px 3px;
+}
+
+.popular-items .popular-item-list {
+  width: 85%;
+  margin: 10px auto 0 auto;
+  border-bottom: var(--darkGrayCardBorder);
+}
+
+.popular-items .popular-item-list p {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  padding-bottom: 2px;
+}
+
+.dashboard-row-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.notifications {
+  background: var(--mainCardColor);
+  width: 65%;
+  height: 13em;
+  border-radius: 15px;
+  margin: 15px 0 15px 35px;
+  padding: 25px;
+}
+
+.notifications h2 {
+  font: var(--darkGrayCardHeading);
+  color: var( --darkGrayCardSecondaryColor);
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.notifications p {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  border-bottom: var(--darkGrayCardBorder);
+}
+
+.library-reports {
+  background: var(--footerCardColor);
+  width: 95%;
+  height: 180px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.library-reports h2 {
+  font: var(--darkGrayCardHeading);
+  color: var( --darkGrayCardSecondaryColor);
+  padding: 0;
+  margin-top: 15px;
+}
+
+.library-reports p {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  margin: 15px 0 15px 15px;
+  padding-bottom: 10px;
+  border-bottom: var(--darkGrayCardBorder);
 }
