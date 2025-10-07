@@ -9,7 +9,7 @@ class AdminController < ApplicationController
     erb :'admin/catalog'
   end
 
-  get '/catalog/new/' do
+  get '/catalog/new' do
     erb :'admin/partials/catalog/new', layout: false
   end
 
