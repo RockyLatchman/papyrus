@@ -9,6 +9,7 @@ html {
 
 :root {
   --backgroundColor: #F4F1EB;
+  --cardBackground: #fff;
   --signinButtonColor: #F0ECE7;
   --formFieldTextColor: #4D4D4D;
   --formFieldBorderColor: #E4E4E4;
@@ -58,10 +59,82 @@ body {
 
 header{
   width: 40%;
-  padding: 25px;
+  padding: 35px;
 }
 
 h1 {
-  font: 900 2em "Alexandria", sans-serif;
+  font: 900 1.8em "Alexandria", sans-serif;
   color: #000;
 }
+
+/* Register */
+
+.register {
+   background: var(--cardBackground);
+   border-radius: 25px;
+   width: 25%;
+   height: 28em;
+   margin: 3% auto 0 auto;
+   padding: 25px;
+}
+
+.register h2 {
+  font: var(--darkGrayCardHeading);
+  font-weight: 900;
+  color: var(--accentColor);
+  margin: 25px 0 5px 15px;
+}
+
+.register p {
+  font: 100 0.6em "Cousine", sans-serif;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.register a {
+  font: 900 1em "Cousine", sans-serif;
+  color: #333;
+  margin-left: 3px;
+}
+
+.register form {
+  padding: 15px;
+}
+
+.register form input[type='text']::placeholder,
+.register form input[type='email']::placeholder,
+.register form input[type='password']::placeholder
+{
+  font: 300 0.8em "Cousine", sans-serif;
+  padding-left: 2px;
+  position: relative;
+  top: -7px;
+}
+
+.register form input[type='text'],
+.register form input[type='email'],
+.register form input[type='password']
+{
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  font: var(--darkGrayCardSub);
+  padding-left: 3px;
+  outline: transparent;
+}
+
+.register form input[type='submit']{
+  width: 45%;
+  height: 40px;
+  float: right;
+  background: #F0ECE7;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  font: 300 0.8em "Cousine", sans-serif;
+  line-height: 3.4em;
+  cursor: pointer;
+}
+
+/* Sign in  */
