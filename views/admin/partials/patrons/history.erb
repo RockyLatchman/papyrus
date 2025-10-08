@@ -1,15 +1,17 @@
 <div id="history-card">
-  <header>
+  <header class="top-header">
      <h2>HISTORY</h2>
-     <menu>
-       <li><button>FINES</button></li>
-       <li><button>RESERVATIONS</button></li>
-       <li><button>CHECKOUTS</button></li>
-     </menu>
+     <div>
+     <select name="filter">
+       <option value="fines">FINES</option>
+       <option value="reservations">RESERVATIONS</option>
+       <option value="checkouts">CHECKOUTS</option>
+     </select>
      <input type="text" name="search" placeholder="SEARCH">
+          </div>
   </header>
   <div id="history">
-    <header>
+    <header class="bottom-header">
       <ul>
         <li>TITLE</li>
         <li>AUTHOR</li>
