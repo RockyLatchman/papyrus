@@ -12,7 +12,13 @@
        <option value="available">AVAILABLE</option>
       </select>
       <input type="text" name="search" placeholder="SEARCH">
-      <button type="button" formaction="admin/catalog/new">&plus; ADD BOOK</button>
+      <button
+          class="modal-button"
+          hx-target="#overlay"
+          hx-get="/admin/catalog/new"
+          hx-swap="beforend">
+          &plus; ADD BOOK
+        </button>
       </div>
     </header>
   <div id="catalog">

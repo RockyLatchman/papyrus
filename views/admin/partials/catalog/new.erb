@@ -1,4 +1,5 @@
 <div class="modal">
+  <a href="" class="close">X</a>
   <h2>ADD BOOK</h2>
   <form method="POST">
     <input type="text" name="title" placeholder="TITLE">
@@ -8,9 +9,18 @@
     <input type="text" name="isbn" placeholder="ISBN">
     <input type="text" name="publisher" placeholder="PUBLISHER">
     <input type="text" name="genre" placeholder="GENRE">
-    <input type="date" name="publication-date">
-    <label><input type="file" name="staff-photo">UPLOAD IMAGE</label>
-    <input type="date" name="acquisition-date">
+    <div class="dashboard-row-items">
+        <div class="form-items">
+          <label for="publication-date">PUBLICATION DATE</label>
+          <input type="date" name="publication-date" id="publication-date">
+        </div>
+        <div class="form-items">
+          <label for="acquisition-date">ACQUISITION DATE</label>
+          <input type="date" name="acquisition-date" id="acquisition-date">
+        </div>
+      </div>
+    <input type="file" name="book-cover-photo" id="book-cover-photo" hidden>
+    <label id="book-cover-upload" for="book-cover-photo">UPLOAD COVER IMAGE</label>
     <input type="submit" value="SAVE">
   </form>
 </div>

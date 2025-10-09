@@ -120,8 +120,11 @@ h1 a {
 .signin form input[type='email']::placeholder,
 .signin form input[type='password']::placeholder,
 .modal form input[type='text']::placeholder,
+.modal form input[type='number']::placeholder,
 .modal form input[type='email']::placeholder,
-.modal form input[type='password']::placeholder
+.modal form input[type='password']::placeholder,
+.form-items #publication-date::placeholder,
+.form-items #acquisition-date::placeholder
 {
   font: 300 0.8em "Cousine", sans-serif;
   padding-left: 2px;
@@ -137,7 +140,8 @@ h1 a {
 .signin form input[type='password'],
 .modal form input[type='text'],
 .modal form input[type='email'],
-.modal form input[type='password']
+.modal form input[type='password'],
+.modal form input[type='number']
 {
   width: 100%;
   height: 35px;
