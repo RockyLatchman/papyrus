@@ -53,66 +53,6 @@ html {
   --footerCardSub: var(--mainCardSub);
 }
 
-
-
-
-.library-reports {
-  background: var(--footerCardColor);
-  width: 95%;
-  height: 170px;
-  border-radius: 15px;
-  padding: 25px;
-}
-
-.library-reports h2 {
-  font: var(--darkGrayCardHeading);
-  color: var( --darkGrayCardSecondaryColor);
-  padding: 0;
-  margin-top: 15px;
-}
-
-.library-reports p {
-  font: 100 0.7em "Cousine", sans-serif;
-  color: #F4F1EB;
-  margin: 15px 0 15px 15px;
-  padding-bottom: 10px;
-  border-bottom: var(--darkGrayCardBorder);
-}.library-reports {
-  background: var(--footerCardColor);
-  width: 95%;
-  height: 170px;
-  border-radius: 15px;
-  padding: 25px;
-}
-
-.library-reports h2 {
-  font: var(--darkGrayCardHeading);
-  color: var( --darkGrayCardSecondaryColor);
-  padding: 0;
-  margin-top: 15px;
-}
-
-.library-reports p {
-  font: 100 0.7em "Cousine", sans-serif;
-  color: #F4F1EB;
-  margin: 15px 0 15px 15px;
-  padding-bottom: 10px;
-  border-bottom: var(--darkGrayCardBorder);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
   background: var(--backgroundColor);
 }
@@ -428,7 +368,7 @@ nav menu li a {
   color: var(--accentColor);
   margin: 15px 0 25px 5px;
 }
-rgba(219,219,219,0.2);
+
 .catalog-card {
   background: var(--footerCardColor);
   width: 100%;

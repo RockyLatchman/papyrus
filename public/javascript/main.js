@@ -46,6 +46,14 @@ const modal = `
     background: #fff;
   }
 
+  .close {
+    float: right;
+    display: block;
+    font: 100 1.5em "Cousine", sans-serif;
+    color: var(--formFieldTextColor);
+    text-decoration: none;
+  }
+
   .confirm-modal {
      width: 25%;
      height: 150px;
