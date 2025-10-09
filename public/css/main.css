@@ -54,6 +54,65 @@ html {
 }
 
 
+
+
+.library-reports {
+  background: var(--footerCardColor);
+  width: 95%;
+  height: 170px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.library-reports h2 {
+  font: var(--darkGrayCardHeading);
+  color: var( --darkGrayCardSecondaryColor);
+  padding: 0;
+  margin-top: 15px;
+}
+
+.library-reports p {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  margin: 15px 0 15px 15px;
+  padding-bottom: 10px;
+  border-bottom: var(--darkGrayCardBorder);
+}.library-reports {
+  background: var(--footerCardColor);
+  width: 95%;
+  height: 170px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.library-reports h2 {
+  font: var(--darkGrayCardHeading);
+  color: var( --darkGrayCardSecondaryColor);
+  padding: 0;
+  margin-top: 15px;
+}
+
+.library-reports p {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  margin: 15px 0 15px 15px;
+  padding-bottom: 10px;
+  border-bottom: var(--darkGrayCardBorder);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   background: var(--backgroundColor);
 }
@@ -84,8 +143,7 @@ h1 a {
 }
 
 .register h2,
-.signin h2
-{
+.signin h2 {
   font: var(--darkGrayCardHeading);
   font-weight: 900;
   color: var(--accentColor);
@@ -109,7 +167,8 @@ h1 a {
 }
 
 .register form,
-.signin form
+.signin form,
+.modal form
 {
   padding: 15px;
 }
@@ -119,7 +178,10 @@ h1 a {
 .register form input[type='password']::placeholder,
 .signin form input[type='text']::placeholder,
 .signin form input[type='email']::placeholder,
-.signin form input[type='password']::placeholder
+.signin form input[type='password']::placeholder,
+.modal form input[type='text']::placeholder,
+.modal form input[type='email']::placeholder,
+.modal form input[type='password']::placeholder
 {
   font: 300 0.8em "Cousine", sans-serif;
   padding-left: 2px;
@@ -132,7 +194,10 @@ h1 a {
 .register form input[type='password'],
 .signin form input[type='text'],
 .signin form input[type='email'],
-.signin form input[type='password']
+.signin form input[type='password'],
+.modal form input[type='text'],
+.modal form input[type='email'],
+.modal form input[type='password']
 {
   width: 100%;
   height: 35px;
@@ -145,7 +210,8 @@ h1 a {
 }
 
 .register form input[type='submit'],
-.signin form input[type='submit']
+.signin form input[type='submit'],
+.modal input[type='submit']
 {
   width: 45%;
   height: 40px;
@@ -362,7 +428,7 @@ nav menu li a {
   color: var(--accentColor);
   margin: 15px 0 25px 5px;
 }
-
+rgba(219,219,219,0.2);
 .catalog-card {
   background: var(--footerCardColor);
   width: 100%;
@@ -486,16 +552,36 @@ nav menu li a {
   background: #E4E4E4;
   border-radius: 25px;
   width: 25%;
-  margin: 15px 50px 0 0;
+  margin: 0 50px 0 0;
   padding: 25px;
 }
 
 .badge-card img {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   width: 96px;
   height: 96px;
   border-radius: 50px;
+  border: none;
+}
+
+.profile-switcher ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-switcher ul li  {
+  border-bottom: none !important;
+}
+
+.profile-switcher ul li a  {
+  color: rgba(51,51,51,0.5);
+  text-decoration: none;
+  font: 500 2em "Cousine", sans-serif;
 }
 
 .badge-card p {
@@ -517,34 +603,10 @@ nav menu li a {
   border-bottom: none;
 }
 
-.profile-switcher {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.profile-switcher ul li:first-child,
-.profile-switcher ul li:last-child
-{
-  position: relative;
-  top: -35px;
-}
-
-.profile-switcher ul li {
-  display: inline;
-  border: none;
-}
-
-.profile-switcher ul li a  {
-  color: rgba(51,51,51,0.5);
-  text-decoration: none;
-  font: 500 2em "Cousine", sans-serif;
-}
-
 #history-card {
   background: #000;
   border-radius: 25px;
   width: 85%;
-  margin-top: 15px;
   padding: 20px;
 }
 
@@ -734,4 +796,148 @@ nav menu li a {
   margin: 10px 0 0 15px;
   padding: 5px 0;
   border-bottom: 1px dashed rgba(219,219,219,0.2);
+}
+
+
+
+
+
+
+
+/* Settings */
+
+.settings h2 {
+  font: var(--darkGrayCardLgHeading);
+  font-weight: 900;
+  color: var(--accentColor);
+  margin: 0 0 0 15px;
+}
+
+.badge-card ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#last-active {
+  text-align: center;
+  border-bottom: 1px dashed #333;
+}
+
+.profile-switcher h2 {
+  text-align: center;
+}
+
+.profile-card {
+  background: #000;
+  border-radius: 25px;
+  width: 55%;
+  padding: 25px;
+}
+
+.profile-card form {
+  width: 75%;
+  margin: 10px auto 0 auto;
+}
+
+.profile-card h2 {
+  color:  floralwhite;
+  font-weight: 300;
+  font: var(--darkGrayCardHeading);
+  padding: 0;
+  margin: 10px 0 0 65px;
+  width: 75%;
+}
+
+.profile-card label {
+  font: 100 0.6em "Cousine", sans-serif;
+  color: #F4F1EB;
+  margin-top: 15px;
+}
+
+.profile-card input[type='text']::placeholder,
+.profile-card input[type='email']::placeholder,
+.profile-card input[type='password']::placeholder {
+  color:#EEE9CC;
+  padding: 7px 0 0 5px;
+}
+
+.profile-card input[type='text'],
+.profile-card input[type='email'],
+.profile-card input[type='password']{
+  border: 1px solid #EEE9CC;
+  background: #333;
+  color:#EEE9CC;
+  font: var(--darkGrayCardFilter);
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  outline: transparent;
+  margin: 10px 0;
+}
+
+.profile-card input[type='submit']  {
+  background: #EEE9CC;
+  margin-top: 15px;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  float: right;
+}
+
+#library-settings-card {
+  background: #333;
+  border-radius: 25px;
+  width: 91.5%;
+  height: 175px;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+#library-settings-card h2 {
+  color:  #EEE9CC;
+  font-weight: 300;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+#library-settings-card label {
+  font: 100 0.7em "Cousine", sans-serif;
+  color: #F4F1EB;
+  margin: 15px 0 15px 15px;
+  padding-bottom: 10px;
+}
+
+#library-settings-card select {
+
+}
+
+#library-settings-card input[type='text'] {
+  border: 1px solid #EEE9CC;
+  background: #333;
+  color:#EEE9CC;
+  font: var(--darkGrayCardFilter);
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  outline: transparent;
+  margin-right: 10px;
+}
+
+#library-settings-card input[type='file'] {
+
+}
+
+#library-settings-card input[type='submit']  {
+    background: #EEE9CC;
+    margin-top: 15px;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    float: right;
 }

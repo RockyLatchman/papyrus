@@ -1,13 +1,17 @@
-<div id="library-settings">
+<div id="library-settings-card">
   <h2>LIBRARY SETTINGS</h2>
   <form method="POST">
-    <label>CHANGE LIBRARY NAME</label>
-    <input type="text" name="name" placeholder="NEW LIBRARY NAME" required>
-    <label>CHANGE CITY</label>
-    <input type="text" name="city" placeholder="NEW CITY" required>
-    <label>CHANGE STATE</label>
-    <input type="text" name="state" placeholder="NEW STATE" required>
-    <select name="state">
+    <div class="dashboard-row-items">
+    <header>
+      <label>CHANGE LIBRARY NAME</label>
+      <label>CHANGE CITY</label>
+      <label>CHANGE STATE</label>
+    </header>
+    </div>
+    <div class="dashboard-row-items">
+      <input type="text" name="name" placeholder="NEW LIBRARY NAME" required>
+      <input type="text" name="city" placeholder="NEW CITY" required>
+      <select name="state">
         <option value="AL">Alabama</option>
      	<option value="AK">Alaska</option>
      	<option value="AZ">Arizona</option>
@@ -59,13 +63,20 @@
      	<option value="WV">West Virginia</option>
      	<option value="WI">Wisconsin</option>
      	<option value="WY">Wyoming</option>
-    </select>
-    <label>CHANGE LIBRARY AVATAR</label>
-    <input type="file" name="avatar">
-    <label>CHANGE ADDRESS</label>
-    <input type="text" name="address" placeholder="NEW ADDRESS" required>
-    <label>CHANGE ZIP CODE</label>
-    <input type="text" name="zip" placeholder="NEW ZIP" required>
+      </select>
+    </div>
+    <div class="dashboard-row-items">
+      <header>
+        <label>CHANGE LIBRARY AVATAR</label>
+        <label>CHANGE ADDRESS</label>
+        <label>CHANGE ZIP CODE</label>
+      </header>
+    </div>
+    <div class="dashboard-row-items">
+      <input type="file" name="avatar">
+      <input type="text" name="address" placeholder="NEW ADDRESS" required>
+      <input type="text" name="zip" placeholder="NEW ZIP" required>
+    </div>
     <input type="submit" value="SAVE">
   </form>
 </div>
