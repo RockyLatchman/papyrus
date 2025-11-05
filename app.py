@@ -15,7 +15,7 @@ init_bunnet(database=client.db_name, document_models=[Library, Patrons, Staff])
 
 @app.route('/')
 def index():
-    pass
+    return render_template('index.j2')
 
 @app.route('/register')
 def register():
