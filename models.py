@@ -17,6 +17,7 @@ class Copies(Document):
    reference: bool
    acquisition_date: datetime
 
+
 class Books(Document):
    isbn: str
    title: str
@@ -26,11 +27,60 @@ class Books(Document):
    genre: str
    copies: Link[Copies]
 
+   def add_book():
+       #only the librarian can do this
+       pass
+
+   def edit_book():
+       pass
+
+   def remove_book():
+       #only the librarian can do this
+       pass
+
+   def catalog():
+       pass
+
+   def get_book():
+       pass
+
+   def book_count():
+       pass
+
+   def popularity():
+       #most popular books (based on check outs and reserves)
+       pass
+
+   def reserve_book(book_id):
+       pass
+
+   def cancel_reservation(book_id):
+       pass
+
+   def checkout():
+       #checkout book(s)
+       pass
+
+   def checkin():
+       #check-in books(return)
+       pass
+
+
+
 class Fines(BaseModel):
    amount: int
    reason: str
    status: str
    paid_date: datetime = Field(default=None)
+
+   def issue_fine():
+       pass
+
+   def fine_paid():
+       #mark fine has paid
+       # arguments - (membership_number, amount, paid_date and book_id)
+       pass
+
 
 class Reservations(Document):
    book_id: str
@@ -46,9 +96,11 @@ class Checkouts(Document):
    renewal_count: int
    fines: Fines
 
+
 class History(Document):
    checkouts: Link[Checkouts]
    reservations: Link[Reservations]
+
 
 class Library(Document):
    name: str
@@ -56,6 +108,15 @@ class Library(Document):
    members: List[str]
    date_added: datetime
    books: Link[Books]
+
+   def add():
+       pass
+
+   def update():
+       pass
+
+
+
 
 class Patrons(Document):
    fullname: str
@@ -66,6 +127,18 @@ class Patrons(Document):
    date_joined: datetime
    profile_image: str
    history: History
+
+   def create_account():
+       pass
+
+   def edit_account():
+       pass
+
+   def suspend_account():
+       pass
+
+   def reinstate_account():
+       pass
 
 
 class Staff(Document):
@@ -78,3 +151,20 @@ class Staff(Document):
    last_active: datetime
    status: str
    library_id: str
+
+   def add_member():
+       pass
+
+   def deactive_account():
+       #only the librarian can do this
+       pass
+
+   def edit_member():
+       pass
+
+   def retrieve_staff():
+       #only the librarian can do this
+       pass
+
+   def retrieve_member():
+       pass

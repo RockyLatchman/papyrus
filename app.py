@@ -3,12 +3,12 @@ from dotenv import load_dotenv
 from flask_wtf import CSRFProtect
 from pymongo import MongoClient
 from bunnet import init_bunnet
-from models import Library, Patrons, Staff, Checkouts, Copies, Location
+from models import Library, Patrons, Staff, Checkouts, Copies, Location, Books
 import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-app.config['DATABASE_URL'] =os.environ.get('DATABASE_URL')
+app.config['DATABASE_URL'] = os.environ.get('DATABASE_URL')
 csrf_token = CSRFProtect(app)
 client = MongoClient(app.config['DATABASE_URL'])
 init_bunnet(database=client.db_name, document_models=[Library, Patrons, Staff])
@@ -19,7 +19,7 @@ def index():
 
 @app.route('/register')
 def register():
-    pass
+    return render_template('register.j2')
 
 @app.route('/library')
 def add_library():
