@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from flask_wtf import CSRFProtect
 from pymongo import MongoClient
 from bunnet import init_bunnet
-from models import Library, Patrons, Staff
+from models import Library, Patrons, Staff, Checkouts, Copies, Location
 import os
 
 app = Flask(__name__)
