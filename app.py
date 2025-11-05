@@ -23,7 +23,7 @@ def register():
 
 @app.route('/library')
 def add_library():
-    pass
+    return render_template('staff/library.j2')
 
 @app.route('/library/signin')
 def library_signin():

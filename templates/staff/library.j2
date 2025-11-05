@@ -1,0 +1,15 @@
+{% extends 'base.j2' %}
+{% block content %}
+<div class="container">
+  <form method="POST">
+    <h3>Sign in</h3>
+    <input type="text" name="name" placeholder="NAME">
+    <input type="text" name="address" placeholder="ADDRESS">
+    <input type="text" name="city" placeholder="CITY">
+    <input type="text" name="state" placeholder="STATE">
+    <input type="text" name="zip" placeholder="ZIP">
+    <div><span>DATE ESTABLISHED</span><input type="date" name="date_established"></div>
+    <input type="submit" name="register" value="Register">
+  </form>
+</div>
+{% endblock %}

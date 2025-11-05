@@ -135,9 +135,11 @@ class Patrons(Document):
        pass
 
    def suspend_account():
+       #only the librarian can do this
        pass
 
    def reinstate_account():
+       #only the librarian can do this
        pass
 
 
