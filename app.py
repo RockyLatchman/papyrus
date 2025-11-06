@@ -57,7 +57,6 @@ def staff_settings():
 def admin_signout():
     pass
 
-
 @app.route('/dashboard')
 def dashboard():
     return render_template('patrons/dashboard.j2')
@@ -66,24 +65,27 @@ def dashboard():
 def catalog():
     return render_template('patrons/catalog.j2')
 
-@app.route('/catalog/reserve/book/<book_id>')
+@app.route('/catalog/reserve/book/<book_id>', methods=['POST'])
 def reserve_book(book_id):
     #Add book id to redis(along with user_id, expiration)
     pass
 
-@app.route('/reservations')
-def reservations():
+@app.route('/reservation')
+def reservation():
     # view reserved books
     # get stored book id from redis and pass it to
     # reservation template(add book, limit 10
     # if it exceeds suggest adding some items to
     # favorites thats what its for)
-    pass
-
+    return render_template('patrons/reservation.j2')
 
 @app.route('/favorites')
 def favorites():
     return render_template('patrons/favorites.j2')
+
+@app.route('/favorites/add/<book_id>', methods=['POST'])
+def favorite(book_id):
+    pass
 
 @app.route('/messages')
 def messages():
