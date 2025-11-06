@@ -43,7 +43,7 @@ def library_patrons():
 
 @app.route('/admin/staff')
 def library_staff():
-    pass
+    return render_template('staff/staff.j2')
 
 @app.route('/admin/messages')
 def admin_messages():
