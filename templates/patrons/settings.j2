@@ -1,0 +1,31 @@
+{% extends 'base.j2' %}
+{% block content %}
+{% include 'patrons/partials/menu.j2' %}
+<div class="dashboard">
+   <h2>SETTINGS</h2>
+   <div class="row-content">
+     <div class="left-card">
+        <header>
+          <div class="admin-profile">
+            <img src="{{ url_for('static', filename='images/profiles/img-001.png') }}" alt="">
+            <span>&plus;</span>
+          </div>
+          <span>EDDIE BRAND</span>
+          <p>LAST ACTIVE: 2/12/2025</p>
+        </header>
+     </div>
+     <div class="main-card">
+        <h4>PROFILE</h4>
+        <form method="POST">
+            <label>CHANGE USERNAME</label>
+            <input type="text" name="username" placeholder="NEW USERNAME">
+            <label>CHANGE EMAIL ADDRESS</label>
+            <input type="email" name="email" placeholder="NEW EMAIL">
+            <label>CHANGE PASSWORD</label>
+            <input type="password" name="password" placeholder="NEW PASSWORD">
+            <input type="submit" name="submit" value="SAVE">
+        </form>
+     </div>
+   </div>
+</div>
+{% endblock %}

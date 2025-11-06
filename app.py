@@ -76,7 +76,7 @@ def messages():
 
 @app.route('/settings')
 def settings():
-    pass
+    return render_template('patrons/settings.j2')
 
 @app.route('/signout')
 def signout():
