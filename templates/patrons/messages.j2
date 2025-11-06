@@ -1,0 +1,65 @@
+{% extends 'base.j2' %}
+{% block content %}
+{% include 'patrons/partials/menu.j2' %}
+<div class="dashboard">
+   <h2>MESSAGES</h2>
+   <div class="message-card">
+      <header>
+         <input type="text" name="search" placeholder="SEARCH">
+         <select name="message-filter">
+            <option value="unread">UNREAD</option>
+            <option value="draft">DRAFT</option>
+            <option value="all">ALL</option>
+          </select>
+      </header>
+        <div class="message-content">
+            <ul>
+             <li>SENDER</li>
+             <li>SUBJECT</li>
+             <li>DATE SENT</li>
+             <li>ACTION</li>
+           </ul>
+            <div class="sender-profile">
+               <div class="left-content">
+                  <img src="{{ url_for('static', filename='profile/staff/img002.png') }}" alt="Staff member image">
+               </div>
+               <div class="right-content">
+                 <ul>
+                   <li>John Smith</li>
+                   <li>Library Clerk</li>
+                </ul>
+              </div>
+            <div>
+            <div class="message">
+              <ul>
+                <li><span class="message-status"></span>Job inquiry</li>
+                <li>Oct 27, 2015</li>
+                <li>Contact</li>
+                <li><i class="fa-solid fa-trash-can"></i></li>
+             </ul>
+           </div>
+
+            <div class="sender-profile">
+               <div class="left-content">
+                  <img src="{{ url_for('static', filename='profile/staff/img002.png') }}" alt="Staff member image">
+               </div>
+               <div class="right-content">
+                 <ul>
+                   <li>Alicia Thomas</li>
+                   <li>Library Clerk</li>
+                </ul>
+              </div>
+            <div>
+            <div class="message">
+              <ul>
+                <li><span class="message-status"></span>Job inquiry</li>
+                <li>Oct 27, 2015</li>
+                <li>Contact</li>
+                <li><i class="fa-solid fa-trash-can"></i></li>
+             </ul>
+           </div>
+        </div>
+       <span><a href="">NEXT &gt;&gt;</a></span>
+   </div>
+</div>
+{% endblock %}
