@@ -2,3 +2,134 @@
    of days available to check out the book(s) and a
    confirm button
 #}
+
+
+{% extends 'base.j2' %}
+{% block content %}
+{% include 'patrons/partials/menu.j2' %}
+<div class="dashboard">
+   <h2>RESERVATIONS</h2>
+   <div class="reservation-card">
+     <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+            <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+
+      <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+            <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+
+    <div class="catalog-card reserve">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+            <button type="button" class="add-button">&minus; Remove book</button>
+        </div>
+    </div>
+
+    <div class="checkout-details">
+      <h4>CHECKOUT BOOKS</h4>
+      <ul>
+        <li>TOTAL BOOKS: 4</li>
+        <li>AVAILABLE DATE: 11/9/2025</li>
+        <li>RETURN DATE: 12/7/2025</li>
+      </ul>
+      <span><a href="{{ url_for('confirmation') }}">CONFIRM</a></span>
+    </div>
+
+   </div>
+</div>
+{% endblock %}

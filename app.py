@@ -79,6 +79,10 @@ def reservation():
     # favorites thats what its for)
     return render_template('patrons/reservation.j2')
 
+@app.route('/confirmation')
+def confirmation():
+    return render_template('patrons/confirmation.j2')
+
 @app.route('/favorites')
 def favorites():
     return render_template('patrons/favorites.j2')
