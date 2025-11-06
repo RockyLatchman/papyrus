@@ -35,7 +35,7 @@ def admin_dashboard():
 
 @app.route('/admin/catalog')
 def library_catalog():
-    pass
+    return render_template('staff/catalog.j2')
 
 @app.route('/admin/patrons')
 def library_patrons():
