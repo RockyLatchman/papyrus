@@ -1,0 +1,164 @@
+{% extends 'base.j2' %}
+{% block content %}
+{% include 'patrons/partials/menu.j2' %}
+<div class="dashboard">
+   <h2>CATALOG</h2>
+   <div class="dashboard-header">
+     <header>
+      <input type="text" name="search" placeholder="SEARCH">
+       <select name="category-filter">
+          <option value="literary-fiction"> Literary Fiction</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="mystery">Mystery</option>
+          <option value="thriller">Thriller</option>
+          <option value="romance">Romance</option>
+          <option value="historical-fiction">Historical Fiction</option>
+          <option value="graphic_novel">Graphic Novel</option>
+          <option value="young-adult">Young Adult</option>
+          <option value="classic">Classic</option>
+          <option value="short-stories">Short Stories</option>
+          <option value="dystopian">Dystopian</option>
+          <option value="adventure">Adventure</option>
+          <option value="magical-realism">Magical Realism</option>
+          <option value="memoir">Memoir</option>
+          <option value="biography">Biography</option>
+          <option value="popular-science">Popular Science</option>
+          <option value="history">History</option>
+          <option value="true-crime">True Crime</option>
+          <option value="travel">Travel</option>
+          <option value="food-writing">Food Writing</option>
+          <option value="essays">Essays</option>
+          <option value="philosophy">Philosophy</option>
+          <option value="self-help">Self-Help</option>
+          <option value="business-economics">Business/Economics</option>
+          <option value="nature-writing">Nature Writing:</option>
+          <option value="art">Art</option>
+          <option value="religion">Religion</option>
+          <option value="psychology">Psychology</option>
+          <option value="journalism">Journalism</option>
+       </select>
+     </header>
+   </div>
+   <div class="row-content catalog">
+     <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+
+      <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+     <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+
+    <div class="catalog-card">
+        <div class="left-content">
+           <img src="{{ url_for('static', filename='/images/covers/1984-cover.png') }}" alt="Book cover for 1984">
+           <button type="button" id="favorites-button"><i class="fa-solid fa-heart"></i>Add to favorites</button>
+        </div>
+        <div class="right-content">
+            <ul>
+             <li>TITLE<span>1984</span></li>
+             <li>AUTHOR<span>George Orwell</span></li>
+             <li>ISBN<span>978-0451524935</span></li>
+             <li>PUBLISHER<span>Signet Classic</span></li>
+             <li>PUBLICATION DATE<span>1949/06/08</span></li>
+             <li>AVAILABLE<span>1</span></li>
+             <li>GENRE<span>FICTION</span></li>
+           </ul>
+           <button type="button" id="add-button">&plus; Add book</button>
+        </div>
+    </div>
+
+
+
+
+   </div>
+</div>
+{% endblock %}

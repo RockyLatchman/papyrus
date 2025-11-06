@@ -64,11 +64,25 @@ def dashboard():
 
 @app.route('/catalog')
 def catalog():
+    return render_template('patrons/catalog.j2')
+
+@app.route('/catalog/reserve/book/<book_id>')
+def reserve_book(book_id):
+    #get stored book id from redis and pass it to
+    # reservation template(add book, limit 10
+    # if it exceeds suggest adding some items to
+    # favorites thats what its for)
     pass
+
+@app.route('/reservations')
+def reservations():
+    #view reserved books
+    pass
+
 
 @app.route('/favorites')
 def favorites():
-    pass
+    return render_template('patrons/favorites.j2')
 
 @app.route('/messages')
 def messages():
