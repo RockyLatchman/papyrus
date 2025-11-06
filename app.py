@@ -67,7 +67,7 @@ def favorites():
 
 @app.route('/messages')
 def messages():
-    pass
+   return render_template('patrons/messages.j2')
 
 @app.route('/settings')
 def settings():
