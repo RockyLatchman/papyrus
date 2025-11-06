@@ -57,6 +57,11 @@ def staff_settings():
 def admin_signout():
     pass
 
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('patrons/dashboard.j2')
+
 @app.route('/catalog')
 def catalog():
     pass

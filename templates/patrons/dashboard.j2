@@ -1,0 +1,103 @@
+{% extends 'base.j2' %}
+{% block content %}
+{% include 'patrons/partials/menu.j2' %}
+<div class="dashboard">
+   <h2>DASHBOARD</h2>
+   <div class="dashboard-header">
+     <header>
+        <ul>
+          <li>BOOKS READ</li>
+          <li>BOOKS BORROWED</li>
+          <li>BOOKS RETURNED</li>
+        </ul>
+        <ul>
+          <li>15</li>
+          <li>17</li>
+          <li>14</li>
+        </ul>
+     </header>
+   </div>
+   <div class="row-content">
+     <div class="left-card">
+        <header>
+          <span>RESERVATIONS</span>
+          <select name="filter">
+            <option value="last_30">FILTER BY: LAST 30 DAYS</option>
+            <option value=""></option>
+          </select>
+        </header>
+        <div class="card-content">
+           <ul>
+             <li>CATCHER AND THE RYE</li>
+             <li>CHECKED OUT: 10/10/2025</li>
+           </ul>
+            <ul>
+             <li>ART OF WAR</li>
+             <li>CHECKED OUT: 10/10/2025</li>
+           </ul>
+            <ul>
+             <li>AUTOBIOGRAPHY OF MALCOLM X</li>
+             <li>CHECKED OUT: 10/10/2025</li>
+           </ul>
+            <ul>
+             <li>RICH DAD, POOR DAD</li>
+             <li>CHECKED OUT: 10/10/2025</li>
+           </ul>
+        </div>
+     </div>
+     <div class="main-card">
+         <h4>NOTIFICATIONS</h4>
+         <div class="card-content">
+           <ul>
+             <li>AUTOBIOGRAPHY OF MALCOLM X DUE ON 2/12/2025<span>ONLINE</span></li>
+             <li>LATE FEE OWED FOR RICH DAD, POOR DAD<span>PAY BY: 3/12/2025</span></li>
+           </ul>
+        </div>
+     </div>
+   </div>
+   <div class="history-card">
+      <header>
+        <h4>HISTORY</h4>
+         <ul>
+           <li>ALL</li>
+           <li>LATE</li>
+           <li>RETURNED</li>
+           <li>&lt;&lt; NOV</li>
+        </ul>
+         <ul>
+           <li>MEMBERSHIP ID</li>
+           <li>NAME</li>
+           <li>TITLE</li>
+           <li>STATUS</li>
+           <li>CHECKOUT DATE</li>
+           <li>NO COPIES</li>
+           <li></li>
+        </ul>
+      </header>
+         <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+        <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+         <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+   </div>
+</div>
+{% endblock %}
