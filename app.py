@@ -49,6 +49,10 @@ def library_staff():
 def admin_messages():
     pass
 
+@app.route('/admin/messages')
+def staff_messages():
+    pass
+
 @app.route('/admin/settings')
 def staff_settings():
     return render_template('staff/settings.j2')

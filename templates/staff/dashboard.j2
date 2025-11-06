@@ -1,14 +1,6 @@
 {% extends 'base.j2' %}
 {% block content %}
-<nav>
-  <menu>
-    <li><a href="{{ url_for('library_catalog') }}">+ CATALOG</a></li>
-    <li><a href="{{ url_for('library_patrons') }}">PATRONS</a></li>
-    <li><a href="{{ url_for('library_staff') }}">STAFF</a></li>
-    <li><a href="{{ url_for('staff_settings') }}">SETTINGS</a></li>
-    <li><a href="{{ url_for('admin_signout') }}">SIGN OUT</a></li>
-  </menu>
-<nav>
+{% include 'staff/partials/menu.j2' %}
 <div class="dashboard">
    <h2>DASHBOARD</h2>
    <div class="dashboard-header">
