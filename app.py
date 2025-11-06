@@ -39,7 +39,7 @@ def library_catalog():
 
 @app.route('/admin/patrons')
 def library_patrons():
-    pass
+    return render_template('staff/patrons.j2')
 
 @app.route('/admin/staff')
 def library_staff():

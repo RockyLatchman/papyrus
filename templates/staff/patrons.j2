@@ -1,0 +1,109 @@
+{% extends 'base.j2' %}
+{% block content %}
+<nav>
+  <menu>
+    <li><a href="{{ url_for('library_catalog') }}">+ CATALOG</a></li>
+    <li><a href="{{ url_for('library_patrons') }}">PATRONS</a></li>
+    <li><a href="{{ url_for('library_staff') }}">STAFF</a></li>
+    <li><a href="{{ url_for('staff_settings') }}">SETTINGS</a></li>
+    <li><a href="{{ url_for('admin_signout') }}">SIGN OUT</a></li>
+  </menu>
+<nav>
+<div class="dashboard">
+   <h2>PATRONS</h2>
+   <div class="row-content">
+     <div class="left-card">
+        <header>
+          <div class="admin-profile">
+            <img src="{{ url_for('static', filename='images/profiles/img-001.png') }}" alt="">
+            <span>&plus;</span>
+            <span>EDDIE BRAND</span>
+          </div>
+          <ul>
+            <li>DATE REGISTERED: 1/2/2024</li>
+            <li>CHECK OUTS: 2</li>
+            <li>FINES: 0</li>
+            <li>LATE RETURNS: 0</li>
+            <li>ACTIVE: YES</li>
+            <li>LAST ACTIVE: 2/12/2025</li>
+          </ul>
+        </header>
+     </div>
+     <div class="main-card">
+      <header>
+        <h4>HISTORY</h4>
+         <ul>
+           <li>ALL</li>
+           <li>LATE</li>
+           <li>RETURNED</li>
+        </ul>
+        <input type="text" name="search" placeholder="SEARCH">
+      </header>
+         <ul>
+           <li>TITLE</li>
+           <li>AUTHOR</li>
+           <li>GENRE</li>
+           <li>CHECKOUT DATE</li>
+           <li>RETURN DATE</li>
+           <li>RESERVED</li>
+           <li>ASSISTED BY </li>
+        </ul>
+        <ul>
+           <li><span class="checkout"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+         <ul>
+           <li><span class="returned"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+        <ul>
+           <li><span class="checkout"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+         <ul>
+           <li><span class="returned"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+         <ul>
+           <li><span class="checkout"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+         <ul>
+           <li><span class="returned"></span>1984</li>
+           <li>George Orwell</li>
+           <li>FICTION</li>
+           <li>2025/11/28</li>
+           <li>1949/06/08</li>
+           <li>YES</li>
+           <li>SHARON WILLIAMS</li>
+        </ul>
+       <span><a href="">LOAD MORE &gt;&gt;</a></span>
+     </div>
+   </div>
+ </div>
+{% endblock %}

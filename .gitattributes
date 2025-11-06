@@ -1,3 +1,4 @@
 *.py linguist-language=Python
 *.css -linguist-detecable
 *.html -linguist-detectable
+*.j2 -linguist-detectable
