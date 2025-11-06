@@ -68,15 +68,16 @@ def catalog():
 
 @app.route('/catalog/reserve/book/<book_id>')
 def reserve_book(book_id):
-    #get stored book id from redis and pass it to
-    # reservation template(add book, limit 10
-    # if it exceeds suggest adding some items to
-    # favorites thats what its for)
+    #Add book id to redis(along with user_id, expiration)
     pass
 
 @app.route('/reservations')
 def reservations():
-    #view reserved books
+    # view reserved books
+    # get stored book id from redis and pass it to
+    # reservation template(add book, limit 10
+    # if it exceeds suggest adding some items to
+    # favorites thats what its for)
     pass
 
 
