@@ -13,25 +13,25 @@ csrf_token = CSRFProtect(app)
 client = MongoClient(app.config['DATABASE_URL'])
 init_bunnet(database=client.db_name, document_models=[Library, Patrons, Staff])
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.j2')
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     return render_template('register.j2')
 
-@app.route('/library')
+@app.route('/library', methods=['GET', 'POST'])
 def add_library():
     return render_template('staff/library.j2')
 
-@app.route('/library/signin')
+@app.route('/library/signin', methods=['GET', 'POST'])
 def library_signin():
     pass
 
 @app.route('/admin/dashboard')
 def admin_dashboard():
-    pass
+    return render_template('staff/dashboard.j2')
 
 @app.route('/admin/catalog')
 def library_catalog():

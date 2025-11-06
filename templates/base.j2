@@ -5,7 +5,14 @@
      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
    </head>
    <body>
+     <div class="container">
+      <header>
+        <div id="logotype">
+           <h2>PAPYRUS</h2>
+        </div>
+      </header>
       {% block content %}{% endblock %}
       <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+      </div>
    </body>
 </html>

@@ -1,6 +1,5 @@
 {% extends 'base.j2' %}
 {% block content %}
-<div class="container">
   <form method="POST">
     <h3>Sign in</h3>
     <input type="email" name="email" placeholder="E-mail">
@@ -9,5 +8,4 @@
     <input type="submit" name="signin" value="Sign in">
     <span>Dont have an account?<a href="{{ url_for('register') }}">Sign up</a></span>
   </form>
-</div>
 {% endblock %}

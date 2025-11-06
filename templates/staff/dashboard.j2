@@ -1,0 +1,123 @@
+{% extends 'base.j2' %}
+{% block content %}
+<nav>
+  <menu>
+    <li><a href="{{ url_for('library_catalog') }}">+ CATALOG</a></li>
+    <li><a href="{{ url_for('library_patrons') }}">PATRONS</a></li>
+    <li><a href="{{ url_for('library_staff') }}">STAFF</a></li>
+    <li><a href="{{ url_for('staff_settings') }}">SETTINGS</a></li>
+    <li><a href="{{ url_for('admin_signout') }}">SIGN OUT</a></li>
+  </menu>
+<nav>
+<div class="">
+   <h2>DASHBOARD</h2>
+   <div class="dashboard-header">
+     <header>
+        <ul>
+          <li>PATRONS</li>
+          <li>SIGNED IN</li>
+        </ul>
+        <ul>
+          <li>198</li>
+          <li>23</li>
+        </ul>
+        <ul>
+          <li>BOOKS</li>
+          <li>BORROWED</li>
+          <li>RETURNED</li>
+        </ul>
+        <ul>
+          <li>980</li>
+          <li>110</li>
+          <li>23</li>
+        </ul>
+     </header>
+   </div>
+   <div class="row-content">
+     <div class="left-card">
+        <header>
+          <span>POPULAR TITLES</span>
+          <select name="filter">
+            <option value="last_30">FILTER BY: LAST 30 DAYS</option>
+            <option value=""></option>
+          </select>
+        </header>
+        <div class="card-content">
+           <ul>
+             <li>CATCHER AND THE RYE</li>
+             <li>CHECKED OUT: 10</li>
+           </ul>
+            <ul>
+             <li>ART OF WAR</li>
+             <li>CHECKED OUT: 10</li>
+           </ul>
+            <ul>
+             <li>AUTOBIOGRAPHY OF MALCOLM X</li>
+             <li>CHECKED OUT: 10</li>
+           </ul>
+            <ul>
+             <li>RICH DAD, POOR DAD</li>
+             <li>CHECKED OUT: 10 </li>
+           </ul>
+        </div>
+     </div>
+     <div class="main-card">
+         <h4>NOTIFICATIONS</h4>
+         <div class="card-content">
+           <ul>
+             <li>ALICE THOMAS JOINED ON 2/12/2025<span>ONLINE</span></li>
+             <li>ALICE THOMAS RESERVED CATCHER AND THE RYE ON 3/12/2025<span>ONLINE</span></li>
+             <li>ALICE THOMAS JOINED ON 2/12/2025<span>ONLINE</span></li>
+             <li>ALICE THOMAS JOINED ON 2/12/2025<span>DESK</span></li>
+           </ul>
+        </div>
+     </div>
+   </div>
+   <div class="report-card">
+      <header>
+        <h4>LIBRARY REPORTS</h4>
+         <ul>
+           <li>ALL</li>
+           <li>LATE</li>
+           <li>RETURNED</li>
+           <li>&lt;&lt; NOV</li>
+        </ul>
+         <ul>
+           <li>MEMBERSHIP ID</li>
+           <li>NAME</li>
+           <li>TITLE</li>
+           <li>STATUS</li>
+           <li>CHECKOUT DATE</li>
+           <li>NO COPIES</li>
+           <li></li>
+        </ul>
+         <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+        <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+         <ul>
+           <li>000198723</li>
+           <li>ROBERT WATTS</li>
+           <li>WAR AND PEACE</li>
+           <li>RETURNED</li>
+           <li>3/22/2025</li>
+           <li>2</li>
+        </ul>
+      </header>
+
+
+   </div>
+</div>
+{% endblock %}
