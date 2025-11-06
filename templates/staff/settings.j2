@@ -1,0 +1,56 @@
+{% extends 'base.j2' %}
+{% block content %}
+<nav>
+  <menu>
+    <li><a href="{{ url_for('library_catalog') }}">+ CATALOG</a></li>
+    <li><a href="{{ url_for('library_patrons') }}">PATRONS</a></li>
+    <li><a href="{{ url_for('library_staff') }}">STAFF</a></li>
+    <li><a href="{{ url_for('staff_settings') }}">SETTINGS</a></li>
+    <li><a href="{{ url_for('admin_signout') }}">SIGN OUT</a></li>
+  </menu>
+<nav>
+<div class="dashboard">
+   <h2>SETTINGS</h2>
+   <div class="row-content">
+     <div class="left-card">
+        <header>
+          <div class="admin-profile">
+            <img src="{{ url_for('static', filename='images/profiles/img-001.png') }}" alt="">
+            <span>&plus;</span>
+          </div>
+          <span>EDDIE BRAND</span>
+          <p>LAST ACTIVE: 2/12/2025</p>
+        </header>
+     </div>
+     <div class="main-card">
+        <h4>PROFILE</h4>
+        <form method="POST">
+            <label>CHANGE USERNAME</label>
+            <input type="text" name="username" placeholder="NEW USERNAME">
+            <label>CHANGE EMAIL ADDRESS</label>
+            <input type="email" name="email" placeholder="NEW EMAIL">
+            <label>CHANGE PASSWORD</label>
+            <input type="password" name="password" placeholder="NEW PASSWORD">
+            <input type="submit" name="submit" value="SAVE">
+        </form>
+     </div>
+   </div>
+   <div class="library-settings-card">
+      <h4>LIBRARY SETTINGS</h4>
+      <form method="POST">
+        <label>CHANGE LIBRARY NAME</label>
+        <input type="text" name="library-name" placeholder="NEW LIBRARY NAME">
+        <label>CHANGE CITY</label>
+        <input type="text" name="city" placeholder="NEW CITY">
+        <label>CHANGE STATE</label>
+        <label>CHANGE LIBRARY PROFILE IMAGE</label>
+        <div><input type="file" name="profile-image">+</div>
+        <label>CHANGE ADDRESS</label>
+        <input type="text" name="address" placeholder="NEW ADDRESS">
+        <label>CHANGE ZIP CODE</label>
+        <input type="text" name="zip" placeholder="NEW ZIP">
+        <input type="submit" name="save" value="Save">
+      </form>
+   </div>
+</div>
+{% endblock %}

@@ -51,7 +51,7 @@ def admin_messages():
 
 @app.route('/admin/settings')
 def staff_settings():
-    pass
+    return render_template('staff/settings.j2')
 
 @app.route('/admin/signout')
 def admin_signout():
