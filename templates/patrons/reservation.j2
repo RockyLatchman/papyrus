@@ -8,6 +8,7 @@
 {% block content %}
 {% include 'patrons/partials/menu.j2' %}
 <div class="dashboard">
+   {% include 'patrons/partials/header.j2' %}
    <h2>RESERVATIONS</h2>
    <div class="reservation-card">
      <div class="catalog-card reserve">
@@ -129,7 +130,7 @@
       </ul>
       <span><a href="{{ url_for('confirmation') }}">CONFIRM</a></span>
     </div>
-
+     </div>
    </div>
 </div>
 {% endblock %}

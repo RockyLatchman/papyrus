@@ -1,1 +1,177 @@
+/* Global */
 
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+box-sizing: border-box;
+}
+
+
+:root {
+--backgroundColor: #F4F1EB;
+--cardBackground: #fff;
+--signinButtonColor: #F0ECE7;
+--formFieldTextColor: #4D4D4D;
+--formFieldBorderColor: #E4E4E4;
+--accentColor: #333;
+
+}
+
+
+body {
+background: var(--backgroundColor);
+}
+
+ul li,
+menu li {
+list-style-type: none;
+}
+
+.top {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 75px;
+}
+
+.logotype {
+width: 15%;
+text-align: center;
+}
+
+.logotype h2 a {
+font: 900 0.9em "Alexandria", sans-serif;
+color: #000;
+text-decoration: none;
+}
+
+.staff-menu {
+width: 35%;
+}
+
+.staff-menu menu li {
+display: inline;
+align-items: center;
+justify-content: center;
+margin-right: 20px;
+}
+
+.staff-menu menu li a {
+color: #1e1e1e;
+font: 600 0.8em "Cousine", sans-serif;
+text-decoration: none;
+}
+
+.patrons-menu {
+width: 75px;
+height: 100vh;
+border-right: 1px solid rgba(77,77,77, 0.3);
+margin-right: 75px;
+}
+
+.patrons-menu menu {
+width: 45%;
+height: auto;
+margin: 85px auto 0 auto;
+}
+
+.patrons-menu menu li {
+margin: 35px 0;
+}
+
+.patrons-menu menu li a {
+color: #1e1e1e;
+font-size: 1.4em;
+}
+
+.patrons-container {
+display: flex;
+flex-direction: row;
+}
+
+
+.dashboard {
+
+
+}
+
+
+.left-content {}
+.right-content {}
+
+
+
+.add-button {}
+.favorite-button {}
+.row-content {}
+.card-content {}
+.main-card {}
+.history-card {}
+.left-card {}
+
+
+/*  Menus */
+.staff-menu {}
+.patrons-menu {}
+
+
+/* Dashboard */
+.dashboard-header {}
+
+
+/*  Catalog */
+.catalog {}
+.row-content.catalog {}
+.catalog.card {}
+
+
+
+/*  Staff */
+.staff-member {}
+.staff-member.active {}
+.staff-search {}
+
+
+
+
+
+/* Favorites  */
+
+
+/* Messages  */
+.message-card {}
+.message-content {}
+.sender-profile {}
+.message {}
+
+
+/* Reservation  */
+
+.reservation-card {}
+.catalog-card.reserve {}
+.checkout-details {}
+
+
+
+/* Confirmation */
+
+
+
+/* Settings */
+.library-settings-card {}
+
+
+
+/* Patrons */
+.checkout {}
+.returned {}
+
+
+
+
+/* Popup windows */

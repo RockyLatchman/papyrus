@@ -2,6 +2,7 @@
 {% block content %}
 {% include 'patrons/partials/menu.j2' %}
 <div class="dashboard">
+   {% include 'patrons/partials/header.j2' %}
    <h2>RESERVATION CONFIRMED</h2>
    <div class="confirmation-card">
       <h4>Thank you</h4>
@@ -10,5 +11,6 @@
          Be sure to return them back by 12/11/2025 to avoid late fees.
       </p>
   </div>
+</div>
 </div>
 {% endblock %}

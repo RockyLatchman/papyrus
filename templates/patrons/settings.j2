@@ -2,6 +2,7 @@
 {% block content %}
 {% include 'patrons/partials/menu.j2' %}
 <div class="dashboard">
+   {% include 'patrons/partials/header.j2' %}
    <h2>SETTINGS</h2>
    <div class="row-content">
      <div class="left-card">
@@ -26,6 +27,7 @@
             <input type="submit" name="submit" value="SAVE">
         </form>
      </div>
+   </div>
    </div>
 </div>
 {% endblock %}
