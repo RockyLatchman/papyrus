@@ -2,11 +2,44 @@
 {% block content %}
 {% include 'staff/partials/menu.j2' %}
 <div class="dashboard">
-   <h2>CATALOG</h2>
    <div class="catalog">
       <header>
-        <h4>BOOK MANAGEMENT</h4>
+        <h4>CATALOG</h4>
+        <input type="text" name="search" placeholder="SEARCH">
+       <select name="category-filter">
+          <option value="literary-fiction"> Literary Fiction</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="mystery">Mystery</option>
+          <option value="thriller">Thriller</option>
+          <option value="romance">Romance</option>
+          <option value="historical-fiction">Historical Fiction</option>
+          <option value="graphic_novel">Graphic Novel</option>
+          <option value="young-adult">Young Adult</option>
+          <option value="classic">Classic</option>
+          <option value="short-stories">Short Stories</option>
+          <option value="dystopian">Dystopian</option>
+          <option value="adventure">Adventure</option>
+          <option value="magical-realism">Magical Realism</option>
+          <option value="memoir">Memoir</option>
+          <option value="biography">Biography</option>
+          <option value="popular-science">Popular Science</option>
+          <option value="history">History</option>
+          <option value="true-crime">True Crime</option>
+          <option value="travel">Travel</option>
+          <option value="food-writing">Food Writing</option>
+          <option value="essays">Essays</option>
+          <option value="philosophy">Philosophy</option>
+          <option value="self-help">Self-Help</option>
+          <option value="business-economics">Business/Economics</option>
+          <option value="nature-writing">Nature Writing:</option>
+          <option value="art">Art</option>
+          <option value="religion">Religion</option>
+          <option value="psychology">Psychology</option>
+          <option value="journalism">Journalism</option>
+       </select>
+       <button type="button" id="add-book">&plus; ADD BOOK</button>
       </header>
+      <div id="catalog-headings">
          <ul>
            <li>ID</li>
            <li>TITLE</li>
@@ -19,6 +52,8 @@
            <li>GENRE</li>
            <li>ACQUISTION DATE</li>
         </ul>
+        </div>
+        <div id="catalog-body">
         <ul>
           <li>23</li>
           <li><span class="status"></span>1984</li>
@@ -79,6 +114,7 @@
           <li>FANTASY</li>
           <li>01/12/18</li>
         </ul>
+       </div>
         <span><a href="">LOAD MORE &gt;&gt;</a></span>
    </div>
 </div>

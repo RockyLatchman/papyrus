@@ -271,6 +271,7 @@ padding: 25px;
 }
 
 .report-card h4,
+.catalog h4,
 .main-card h4 {
 font: 400 1.1em "Cousine", sans-serif;
 color: #F4F1EB;
@@ -280,14 +281,14 @@ margin: 10px 0 0 10px;
 
 .report-card h4 {
 margin: 30px 0 0 25px !important;
-
 }
 
 .report-card header ul {
 margin: 30px 25px 0 0;
 }
 
-.report-card header ul li {
+.report-card header ul li,
+.catalog ul li {
 font: 300 0.9em "Cousine", sans-serif;
 display: inline;
 margin-right: 25px;
@@ -295,6 +296,7 @@ color: #fff;
 width: 100%;
 cursor: pointer;
 }
+
 .report-card header ul li:first-of-type {
 background: #D9D9D9;
 color: #1e1e1e;
@@ -302,14 +304,16 @@ border-radius: 5px;
 padding: 5px 15px;
 }
 
-
-#report-headings {
+#report-headings,
+#catalog-headings {
 color: #fff;
 width: 100%;
 margin-top: 25px;
 }
 
 #report-headings ul,
+#catalog-headings ul,
+#catalog-body ul,
 #report-body ul {
 display: flex;
 flex-direction: space-around;
@@ -317,6 +321,7 @@ width: 100%;
 }
 
 #report-headings ul li,
+#catalog-headings ul li,
 #report-body ul li {
 display: flex;
 justify-content: center;
@@ -331,11 +336,12 @@ margin: 15px 0;
 padding: 3px 0;
 }
 
-#report-body ul {
+#report-body ul,
+#catalog-body ul {
 margin: 15px 0;
 padding: 3px 0;
 border-bottom: 0.1px dashed rgba(221,219,219,0.4);
-width: 100%
+width: 100%;
 }
 
 #report-body ul:first-of-type {
@@ -344,7 +350,97 @@ margin-top: 25px;
 
 
 /*  Catalog */
-.catalog {}
+
+.catalog {
+width: 90%;
+height: 510px;
+background: #000;
+border-radius: 25px;
+margin: 0 auto;
+}
+
+.catalog header {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: #fff;
+width: 97%;
+height: 75px;
+padding: 15px 0;
+}
+
+.catalog header input::placeholder {
+padding-left: 5px;
+color: #EEE9CC;
+}
+
+.catalog header input {
+ width: 20%;
+ height: 30px;
+ background: transparent;
+ border: 1px solid #EEE9CC;
+ border-radius: 8px;
+ margin: 10px 25px 0 225px;
+}
+
+.catalog header select {
+width: 20%;
+height: 30px;
+background: transparent;
+border: 1px solid #EEE9CC;
+border-radius: 8px;
+margin: 10px 25px 0 0;
+color: #EEE9CC;
+outline: transparent;
+text-transform: uppercase;
+}
+
+.catalog header select option {
+background: #1e1e1e;
+color: #EEE9CC;
+}
+
+#add-book {
+width: 135px;
+height: 30px;
+margin-top: 10px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+#catalog-headings ul li {
+display: flex;
+justify-content: space-around;
+font: 300 0.7em "Cousine", sans-serif;
+margin-right: 25px;
+color: #fff;
+width: 100%;
+}
+
+.catalog ul li {
+display: flex;
+justify-content: space-around;
+font: 300 0.8em "Cousine", sans-serif;
+margin-right: 25px;
+padding: 10px 0;
+color: #fff;
+width: 100%;
+cursor: pointer;
+}
+
+.catalog span  {
+float: right;
+margin: 5px 50px 0 0;
+}
+
+.catalog span a {
+font: 300 0.7em "Cousine", sans-serif;
+color: #fff;
+}
+
+
+
 .row-content.catalog {}
 .catalog.card {}
 
