@@ -2,12 +2,11 @@
 {% block content %}
 {% include 'staff/partials/menu.j2' %}
 <div class="dashboard">
-   <h2>PATRONS</h2>
    <div class="row-content">
-     <div class="left-card">
+     <div class="left-card patrons">
         <header>
-          <div class="admin-profile">
-            <img src="{{ url_for('static', filename='images/profiles/img-001.png') }}" alt="">
+          <div class="patrons-profile">
+            <img src="{{ url_for('static', filename='images/brooke-cagle--unsplash.png') }}" alt="">
             <span>&plus;</span>
             <span>EDDIE BRAND</span>
           </div>
@@ -17,20 +16,21 @@
             <li>FINES: 0</li>
             <li>LATE RETURNS: 0</li>
             <li>ACTIVE: YES</li>
-            <li>LAST ACTIVE: 2/12/2025</li>
+            <li class="last">LAST ACTIVE: 2/12/2025</li>
           </ul>
         </header>
      </div>
-     <div class="main-card">
+     <div class="main-card history">
       <header>
         <h4>HISTORY</h4>
          <ul>
-           <li>ALL</li>
-           <li>LATE</li>
-           <li>RETURNED</li>
+           <li>FINES</li>
+           <li>RESERVATIONS</li>
+           <li>CHECKOUTS</li>
         </ul>
         <input type="text" name="search" placeholder="SEARCH">
       </header>
+      <div class="card-headings">
          <ul>
            <li>TITLE</li>
            <li>AUTHOR</li>
@@ -40,6 +40,8 @@
            <li>RESERVED</li>
            <li>ASSISTED BY </li>
         </ul>
+        </div>
+        <div class="card-body">
         <ul>
            <li><span class="checkout"></span>1984</li>
            <li>George Orwell</li>
@@ -95,6 +97,7 @@
            <li>SHARON WILLIAMS</li>
         </ul>
        <span><a href="">LOAD MORE &gt;&gt;</a></span>
+        </div>
      </div>
    </div>
  </div>

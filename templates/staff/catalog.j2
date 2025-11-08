@@ -2,10 +2,8 @@
 {% block content %}
 {% include 'staff/partials/menu.j2' %}
 <div class="dashboard">
-   <div class="catalog">
-      <header>
-        <h4>CATALOG</h4>
-        <input type="text" name="search" placeholder="SEARCH">
+ <div class="catalog-menu">
+     <input type="text" name="search" placeholder="SEARCH">
        <select name="category-filter">
           <option value="literary-fiction"> Literary Fiction</option>
           <option value="fantasy">Fantasy</option>
@@ -38,8 +36,12 @@
           <option value="journalism">Journalism</option>
        </select>
        <button type="button" id="add-book">&plus; ADD BOOK</button>
+ </div>
+   <div class="catalog">
+      <header>
+        <h4>CATALOG</h4>
       </header>
-      <div id="catalog-headings">
+      <div class="card-headings">
          <ul>
            <li>ID</li>
            <li>TITLE</li>
@@ -53,7 +55,7 @@
            <li>ACQUISTION DATE</li>
         </ul>
         </div>
-        <div id="catalog-body">
+        <div class="card-body">
         <ul>
           <li>23</li>
           <li><span class="status"></span>1984</li>

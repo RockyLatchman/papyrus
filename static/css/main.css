@@ -227,7 +227,7 @@ border-bottom: none !important;
 
 .main-card {
 width: 97%;
-height: 375px;
+height: 370px;
 border-radius: 25px;
 margin-left: 25px;
 background: #4D4D4D;
@@ -252,12 +252,16 @@ float: right;
 margin-right: 25px;
 }
 
+
+/* report */
+
 .report-card {
-width: 90%;
+width: 83%;
 height: 365px;
 background: #000;
 border-radius: 25px;
 margin: 0 auto 0 auto;
+padding: 0 50px;
 }
 
 .report-card header {
@@ -265,14 +269,13 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 color: #fff;
-width: 97%;
+width: 100%;
 height: auto;
 padding: 25px;
 }
 
 .report-card h4,
-.catalog h4,
-.main-card h4 {
+.catalog h4 {
 font: 400 1.1em "Cousine", sans-serif;
 color: #F4F1EB;
 width: 25%;
@@ -280,7 +283,7 @@ margin: 10px 0 0 10px;
 }
 
 .report-card h4 {
-margin: 30px 0 0 25px !important;
+margin: 30px 0 0 -30px !important;
 }
 
 .report-card header ul {
@@ -304,118 +307,83 @@ border-radius: 5px;
 padding: 5px 15px;
 }
 
-#report-headings,
-#catalog-headings {
-color: #fff;
-width: 100%;
-margin-top: 25px;
-}
-
-#report-headings ul,
-#catalog-headings ul,
-#catalog-body ul,
-#report-body ul {
-display: flex;
-flex-direction: space-around;
-width: 100%;
-}
-
-#report-headings ul li,
-#catalog-headings ul li,
-#report-body ul li {
-display: flex;
-justify-content: center;
-font: 300 0.8em "Cousine", sans-serif;
-margin-right: 25px;
-color: #fff;
-width: 100%;
-}
-
-#report-body {
-margin: 15px 0;
-padding: 3px 0;
-}
-
-#report-body ul,
-#catalog-body ul {
-margin: 15px 0;
-padding: 3px 0;
-border-bottom: 0.1px dashed rgba(221,219,219,0.4);
-width: 100%;
-}
-
-#report-body ul:first-of-type {
-margin-top: 25px;
-}
 
 
 /*  Catalog */
 
 .catalog {
 width: 90%;
-height: 510px;
+height: 385px;
 background: #000;
 border-radius: 25px;
 margin: 0 auto;
 }
 
-.catalog header {
+.catalog-menu  {
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+background:#fafafa;
+border: 1px solid rgba(221,219,219,0.9);
+border-radius: 25px;
 color: #fff;
-width: 97%;
-height: 75px;
+width: 90%;
+height: 50px;
+margin: 0 auto 15px auto;
 padding: 15px 0;
 }
 
-.catalog header input::placeholder {
+.catalog-menu input::placeholder {
 padding-left: 5px;
-color: #EEE9CC;
+color: #1e1e1e;
 }
 
-.catalog header input {
- width: 20%;
- height: 30px;
- background: transparent;
- border: 1px solid #EEE9CC;
- border-radius: 8px;
- margin: 10px 25px 0 225px;
-}
-
-.catalog header select {
+.catalog-menu input {
 width: 20%;
-height: 30px;
+height: 35px;
 background: transparent;
-border: 1px solid #EEE9CC;
+border: 1px solid #1e1e1e;
+color: #1e1e1e;
 border-radius: 8px;
-margin: 10px 25px 0 0;
-color: #EEE9CC;
+outline: none;
+margin-right: 25px;
+}
+
+.catalog-menu select {
+width: 20%;
+height: 35px;
+background: transparent;
+border: 1px solid #1e1e1e;
+border-radius: 8px;
+color: #1e1e1e;
 outline: transparent;
 text-transform: uppercase;
+margin-right: 25px;
 }
 
-.catalog header select option {
+.catalog-menu select option {
 background: #1e1e1e;
+border: 1px solid #C2C2C2;
 color: #EEE9CC;
 }
 
 #add-book {
 width: 135px;
-height: 30px;
-margin-top: 10px;
+height: 35px;
 border-radius: 8px;
 cursor: pointer;
 }
 
-#catalog-headings ul li {
-display: flex;
-justify-content: space-around;
-font: 300 0.7em "Cousine", sans-serif;
-margin-right: 25px;
-color: #fff;
+.catalog header {
 width: 100%;
+height: 50px;
+padding: 10px 0;
+}
+
+.catalog h4 {
+font: 400 1.1em "Cousine", sans-serif;
+margin: 30px 0 0 50px;
 }
 
 .catalog ul li {
@@ -431,7 +399,7 @@ cursor: pointer;
 
 .catalog span  {
 float: right;
-margin: 5px 50px 0 0;
+margin: 15px 50px 0 0;
 }
 
 .catalog span a {
@@ -485,6 +453,154 @@ color: #fff;
 /* Patrons */
 .checkout {}
 .returned {}
+
+.left-card.patrons {
+height: 400px;
+}
+
+.left-card.patrons img {
+display: block;
+width: 128px;
+height: 128px;
+margin: -15px auto 0 auto;
+}
+
+.patrons-profile span:first-of-type {
+display: block;
+position: relative;
+top: -25px;
+left: 175px;
+width: 25px;
+height: 25px;
+border-radius: 25px;
+line-height: 1.7em;
+background: #000;
+text-align: center;
+cursor: pointer;
+}
+
+.patrons-profile span:last-of-type {
+display: block;
+width: 40%;
+font: 300 1em "Cousine", sans-serif;
+color: #fff;
+margin: -15px auto 15px auto;
+}
+
+.left-card.patrons header ul li {
+font: 300 0.8em "Cousine", sans-serif;
+color: #F4F1EB;
+border-bottom: 0.1px dashed rgba(221,219,219,0.4);
+padding: 5px 0 10px 0;
+cursor: pointer;
+}
+
+.main-card.history {
+padding: 25px 50px;
+width: 100%;
+}
+
+.main-card header {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+margin: 20px auto 40px auto;
+}
+
+.main-card h4 {
+font: 400 1.3em "Cousine", sans-serif;
+color: #F4F1EB;
+width: 45%;
+margin: 5px 0 0 0;
+}
+
+.main-card header input::placeholder {
+padding-left: 5px;
+color: #EEE9CC;
+}
+
+.main-card header input {
+width: 20%;
+height: 30px;
+background: transparent;
+border: 1px solid #EEE9CC;
+font: 300 0.8em "Cousine", sans-serif;
+color: #EEE9CC;
+border-radius: 8px;
+margin-left: 15px;
+outline: none;
+}
+
+.main-card header ul {
+display: flex;
+align-items: center;
+width: 45%;
+margin-bottom: 5px;
+}
+
+.main-card header ul li {
+display: inline-block;
+font: 300 0.8em "Cousine", sans-serif;
+color:  #EEE9CC;
+width: 110px;
+height: 32px;
+margin-left: 25px;
+line-height: 2.7em;
+border: 1px solid #EEE9CC;
+border-radius: 8px;
+text-align: center;
+cursor: pointer;
+}
+
+.card-headings ul,
+.card-body ul {
+display: flex;
+flex-direction: space-around;
+width: 100%;
+}
+
+.card-headings ul li,
+.card-body ul li {
+font: 300 0.7em "Cousine", sans-serif;
+margin-right: 25px;
+padding: 5px 0;
+color: #fff;
+width: 100%;
+}
+
+.card-body {
+margin: 10px auto 0 auto;
+padding: 3px 0;
+width: 100%;
+}
+
+.card-body ul {
+padding: 3px 0;
+border-bottom: 0.1px dashed rgba(221,219,219,0.4);
+width: 100%;
+}
+
+.card-body ul:first-of-type {
+margin-top: 5px;
+}
+
+.card-headings {
+margin: 10px auto 0 auto;
+color: #fff;
+width: 100%;
+}
+
+.card-body span  {
+float: right;
+margin: 15px 50px 0 0;
+}
+
+.card-body span a {
+font: 300 0.7em "Cousine", sans-serif;
+color: #fff;
+}
+
 
 
 
