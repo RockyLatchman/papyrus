@@ -2,7 +2,6 @@
 {% block content %}
 {% include 'staff/partials/menu.j2' %}
 <div class="dashboard">
-   <h2>STAFF</h2>
    <div class="row-content">
      <div class="left-card">
         <header>
@@ -13,10 +12,9 @@
           </ul>
         </header>
         <div class="card-content">
-
             <div class="staff-member active">
                <div class="left-content">
-                 <img src="{{ url_for('static', filename='profile/staff/img002.png') }}" alt="Staff member image">
+                 <img src="{{ url_for('static', filename='images/staff/alicia.png') }}" alt="Staff member image">
                </div>
                <div class="right-content">
                  <span>BEN ATWELL</span>
@@ -24,7 +22,7 @@
                  <span>JOINED 07/22/2025</span>
                </div>
             </div>
-
+           <div class="staff">
             <div class="staff-member">
                <div class="left-content">
                  <img src="{{ url_for('static', filename='profile/staff/img005.png') }}" alt="Staff member image">
@@ -101,6 +99,8 @@
                  <span>JOINED 07/22/2025</span>
                </div>
             </div>
+            </div>
+
         </div>
      </div>
      <div class="main-card">
@@ -111,6 +111,7 @@
           <button>&plus; ADD USER</button>
         </div>
       </header>
+        <div class="card-headings">
          <ul>
            <li>ID</li>
            <li>NAME</li>
@@ -119,6 +120,8 @@
            <li>ACTIVE</li>
            <li>ACTIONS</li>
         </ul>
+        </div>
+        <div class="card-body">
         <ul>
            <li><span></span>23</li>
            <li>ROBERT WATTS</li>
@@ -180,6 +183,7 @@
            <li>DELETE</li>
         </ul>
         <span><a href="">LOAD MORE &gt;&gt;</a></span>
+        </div>
        </div>
    </div>
 </div>

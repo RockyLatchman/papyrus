@@ -307,8 +307,6 @@ border-radius: 5px;
 padding: 5px 15px;
 }
 
-
-
 /*  Catalog */
 
 .catalog {
@@ -419,6 +417,26 @@ color: #fff;
 .staff-member.active {}
 .staff-search {}
 
+.staff {
+height: 200px;
+overflow-y: scroll;
+scrollbar-color: #EEE9CC transparent;
+scrollbar-width: thin;
+scrollbar-gutter: stable;
+}
+
+.staff-member img {
+display: block;
+width: 128px;
+height: 128px;
+margin: -15px auto 0 auto;
+}
+
+.staff-member {
+border-bottom: 0.1px dashed #EEE9CC;
+padding-bottom: 15px;;
+}
+
 
 
 
@@ -491,8 +509,9 @@ margin: -15px auto 15px auto;
 font: 300 0.8em "Cousine", sans-serif;
 color: #F4F1EB;
 border-bottom: 0.1px dashed rgba(221,219,219,0.4);
-padding: 5px 0 10px 0;
+padding: 8px 0;
 cursor: pointer;
+text-align: center;
 }
 
 .main-card.history {
